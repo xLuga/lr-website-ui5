@@ -1,38 +1,60 @@
-<mvc:View controllerName="sap.ui.demo.basicTemplate.controller.Home" displayBlock="true" xmlns="sap.m" xmlns:uxap="sap.uxap" xmlns:mvc="sap.ui.core.mvc">
+<mvc:View controllerName="sap.ui.demo.basicTemplate.controller.Home" displayBlock="true" xmlns="sap.m" xmlns:uxap="sap.uxap" xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout">
     <uxap:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" editHeaderButtonPress="handleEditBtnPress" upperCaseAnchorBar="false">
         <uxap:footer />
-        <uxap:headerContent />
+        <uxap:headerContent>
+            <FlexBox wrap="Wrap">
+                <Avatar class="sapUiSmallMarginEnd" src="./img/ich.jpg" displaySize="L" />
+
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <Link text="+49 151 688 06 766" />
+                    <Link text="lukas_rausch@gmx.de" />
+                </layout:VerticalLayout>
+
+                <layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+                    <Image src="./test-resources/sap/uxap/images/linkedin.png" />
+                    <Image src="./test-resources/sap/uxap/images/Twitter.png" class="sapUiSmallMarginBegin" />
+                </layout:HorizontalLayout>
+
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <Image src="./img/twitter.png" class="sapUiSmallMarginBegin" />
+                    <Avatar src="./img/github.png" class="sapUiSmallMarginBegin" />
+                    <Image src="./img/linkedin.png" class="sapUiSmallMarginBegin" />
+                    <Avatar src="./img/xing.png" class="sapUiSmallMarginBegin" />
+                </layout:VerticalLayout>
+
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <VBox>
+                        <Label text="Erreichte Ziele" />
+                        <ProgressIndicator percentValue="34" displayValue="30%" />
+                    </VBox>
+                </layout:VerticalLayout>
+
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <Label text="Fulda, DE" />
+                </layout:VerticalLayout>
+            </FlexBox>
+        </uxap:headerContent>
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle>
                 <uxap:breadcrumbs>
-                    <Breadcrumbs id="breadcrumbsId" currentLocationText="Object Page Example">
-                        <Link text="Page 1 a very long link" press="handleLink1Press" />
-                        <Link text="Page 2 long link" press="handleLink2Press" />
-                    </Breadcrumbs>
+                    <Breadcrumbs currentLocationText="Die Seite wurde mit OpenUi5 entworfen" />
                 </uxap:breadcrumbs>
-
                 <uxap:expandedHeading>
                     <HBox>
                         <Title text="Lukas Rausch" wrapping="true" />
                         <ObjectMarker type="Favorite" class="sapUiTinyMarginBegin" />
                     </HBox>
                 </uxap:expandedHeading>
-                <uxap:snappedHeading>
-                    <FlexBox fitContainer="true" alignItems="Center">
-                        <Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiTinyMarginEnd" />
-                        <Title text="Denise Smith" wrapping="true" />
-                    </FlexBox>
-                </uxap:snappedHeading>
 
                 <uxap:snappedHeading>
                     <FlexBox fitContainer="true" alignItems="Center">
-                        <Avatar src="../img/ich.jpg" class="sapUiTinyMarginEnd" />
-                        <Title text="Denise Smith" wrapping="true" />
+                        <Avatar src="./img/ich.jpg" class="sapUiTinyMarginEnd" />
+                        <Title text="Lukas Rausch" wrapping="true" />
                     </FlexBox>
                 </uxap:snappedHeading>
 
                 <uxap:expandedContent>
-                    <Text text="Senior UI Enwtickler" />
+                    <Text text="Senior UI Entwickler" />
                 </uxap:expandedContent>
 
                 <uxap:snappedContent>
