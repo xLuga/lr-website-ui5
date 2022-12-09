@@ -13,7 +13,6 @@
 		showEditHeaderButton="true"
 		upperCaseAnchorBar="false"
 	>
-		<footer/>
 		<headerContent>
 			<m:FlexBox wrap="Wrap">
 				<m:Avatar
@@ -170,5 +169,13 @@
 				</subSections>
 			</ObjectPageSection>
 		</sections>
+		<footer>
+			<m:OverflowToolbar asyncMode="false" >
+				<m:ToolbarSpacer/>
+				<m:Label text="Lukas Rausch"/>
+				<m:ToolbarSpacer/>
+			 	<m:Button text="Contact me"/>
+			</m:OverflowToolbar>
+		</footer>
 	</ObjectPageLayout>
 </mvc:View>

@@ -5,7 +5,8 @@ sap.ui.define([
 
 	return Controller.extend("lr.de.website.controller.Home", {
 		onInit: function () {
-
+			let ObjectPage = this.byId("ObjectPageLayout");
+			ObjectPage.setShowFooter(!ObjectPage.getShowFooter());
 		}
 	});
 });
