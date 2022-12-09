@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+	<forms:SimpleForm editable="false" layout="ColumnLayout" >
+
+			<Label text="SAPUI5/OpenUI5 komplett meistern" />
+			<Text text="Bis Ende 2023"/>
+
+			<Label text="SAP HR Wissen vertiefen" />
+			<Text text="Bis Ende 2023"/>
+
+			<Label text="CDS Skills auf das nächste Level bringen" />
+			<Text text="Bis Ende 2023"/>
+
+	</forms:SimpleForm>
+</mvc:View>

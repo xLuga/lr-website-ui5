@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/library","sap/uxap/BlockBase"],function(e,i){"use strict";var l=e.mvc.ViewType;var a=i.extend("lr.de.website.blocks.ZieleBlock",{metadata:{views:{Collapsed:{viewName:"lr.de.website.blocks.ZieleBlock",type:l.XML},Expanded:{viewName:"lr.de.website.blocks.ZieleBlock",type:l.XML}}}});return a});

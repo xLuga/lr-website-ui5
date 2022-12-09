@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+	<forms:SimpleForm editable="false" layout="ColumnLayout" >
+			<Label text="120 Kg Bankdrücken auf Reps" />
+			<Text text="Bis Ende 2023"/>
+
+			<Label text="180 Kg Kreuzheben auf Reps" />
+			<Text text="Bis Ende 2023"/>
+
+			<Label text="Einmal auf 8% KFA sein" />
+			<Text text="Bis Ende 2023"/>
+	</forms:SimpleForm>
+</mvc:View>
