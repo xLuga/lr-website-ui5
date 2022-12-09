@@ -114,6 +114,7 @@
 				titleUppercase="false"
 				id="goalsSection"
 				title="Ziele 2022"
+				importance="Medium"
 			>
 				<subSections>
 					<ObjectPageSubSection
@@ -127,16 +128,17 @@
 							/>
 						</actions>
 						<blocks>
-							<ziele:ZieleBlock/>
+							<ziele:ZieleBlock columnLayout="1"/>
 						</blocks>
 					</ObjectPageSubSection>
+
 					<ObjectPageSubSection
 						id="goalsSectionSS2"
 						title="Persönliche Ziele"
 					>
 						<blocks>
-							<ziele:ZieleBlock_gym_private/>
-							<ziele:ZieleBlock_zukunft_private/>
+							<ziele:ZieleBlock_gym_private id="Gym" columnLayout="1"/>
+							<ziele:ZieleBlock_zukunft_private id="Zukunft" columnLayout="1"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
@@ -145,6 +147,7 @@
 				titleUppercase="false"
 				id="erfahrungen"
 				title="Bisherige Erfahrungen"
+				importance="Medium"
 			>
 				<subSections>
 					<ObjectPageSubSection
@@ -152,18 +155,17 @@
 						title="Fiori"
 					>
 						<blocks>
-							<m:Label text="Ich bin erstmal nur ein Placeholder"/>
+							<ziele:ZieleBlock_gym_private id="Gym1" columnLayout="1"/>
+							<ziele:ZieleBlock_zukunft_private id="Zukunft1" columnLayout="1"/>
 						</blocks>
-						<moreBlocks>
-							<m:Label text="2. Placeholder"/>
-						</moreBlocks>
 					</ObjectPageSubSection>
 					<ObjectPageSubSection
 						id="expSectionSS2"
 						title="SAP"
 					>
 						<blocks>
-							<m:Label text="Ich bin erstmal nur ein Placeholder"/>
+							<ziele:ZieleBlock_gym_private id="Gym2" columnLayout="1"/>
+							<ziele:ZieleBlock_zukunft_private id="Zukunft2" columnLayout="1"/>
 						</blocks>
 					</ObjectPageSubSection>
 				</subSections>
