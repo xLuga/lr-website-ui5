@@ -1,114 +1,174 @@
 <mvc:View
-	controllerName="sap.ui.demo.basicTemplate.controller.Home"
+	controllerName="lr.de.website.controller.Home"
 	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:uxap="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns="sap.uxap"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:layout="sap.ui.layout"
+	xmlns:ziele="lr.de.website.blocks"
 >
-	<uxap:ObjectPageLayout
+	<ObjectPageLayout
 		id="ObjectPageLayout"
 		showTitleInHeaderContent="true"
 		showEditHeaderButton="true"
 		upperCaseAnchorBar="false"
 	>
-		<uxap:footer/>
-		<uxap:headerContent>
-			<FlexBox wrap="Wrap">
-				<Avatar
+		<footer/>
+		<headerContent>
+			<m:FlexBox wrap="Wrap">
+				<m:Avatar
 					class="sapUiSmallMarginEnd"
 					src="./img/ich.jpg"
 					displaySize="XL"
 				/>
 				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-					<VBox class="sapUiSmallMarginBeginEnd">
-						<HBox>
+					<m:VBox class="sapUiSmallMarginBeginEnd">
+						<m:HBox>
 							<!-- class="sapUiSmallMarginBegin" -->
-							<Image src="./img/twitter.png"/>
-							<Link
+							<m:Image src="./img/twitter.png"/>
+							<m:Link
 								href="https://twitter.com/TheRealLuga"
 								text="@TheRealLuga"
 								class="sapUiSmallMarginBegin"
 							/>
-						</HBox>
-						<HBox>
-							<Image src="./img/github.png"/>
-							<Link
+						</m:HBox>
+						<m:HBox>
+							<m:Image src="./img/github.png"/>
+							<m:Link
 								href="https://github.com/xLuga?tab=repositories"
 								text="xLuga"
 								class="sapUiSmallMarginBegin"
 							/>
-						</HBox>
-						<HBox>
-							<Image src="./img/linkedin.png"/>
-							<Link
+						</m:HBox>
+						<m:HBox>
+							<m:Image src="./img/linkedin.png"/>
+							<m:Link
 								href="https://www.linkedin.com/in/lukas-rausch-158a69250/"
 								text="Lukas Rausch"
 								class="sapUiSmallMarginBegin"
 							/>
-						</HBox>
-						<HBox>
-							<Image src="./img/whatsapp.png"/>
-							<Link
+						</m:HBox>
+						<m:HBox>
+							<m:Image src="./img/whatsapp.png"/>
+							<m:Link
 								text="+49 151 688 06 766"
 								class="sapUiSmallMarginBegin"
 							/>
-						</HBox>
-						<HBox>
-							<Image src="./img/email.png"/>
-							<Link
+						</m:HBox>
+						<m:HBox>
+							<m:Image src="./img/email.png"/>
+							<m:Link
 								text="lukas_rausch@gmx.de"
 								class="sapUiSmallMarginBegin"
 							/>
-						</HBox>
-					</VBox>
+						</m:HBox>
+					</m:VBox>
 				</layout:VerticalLayout>
-			</FlexBox>
-		</uxap:headerContent>
-		<uxap:headerTitle>
-			<uxap:ObjectPageDynamicHeaderTitle>
-				<uxap:breadcrumbs>
-					<Breadcrumbs currentLocationText="Die Seite wurde mit OpenUi5 entworfen"/>
-				</uxap:breadcrumbs>
-				<uxap:expandedHeading>
-					<HBox>
-						<Title
+			</m:FlexBox>
+		</headerContent>
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<breadcrumbs>
+					<m:Breadcrumbs currentLocationText="Die Seite wurde mit OpenUi5 entworfen"/>
+				</breadcrumbs>
+				<expandedHeading>
+					<m:HBox>
+						<m:Title
 							text="Lukas Rausch"
 							wrapping="true"
 						/>
-						<ObjectMarker
+						<m:ObjectMarker
 							type="Favorite"
 							class="sapUiTinyMarginBegin"
 						/>
-					</HBox>
-				</uxap:expandedHeading>
-				<uxap:snappedHeading>
-					<FlexBox
+					</m:HBox>
+				</expandedHeading>
+				<snappedHeading>
+					<m:FlexBox
 						fitContainer="true"
 						alignItems="Center"
 					>
-						<Avatar
+						<m:Avatar
 							src="./img/ich.jpg"
 							class="sapUiTinyMarginEnd"
 						/>
-						<Title
+						<m:Title
 							text="Lukas Rausch"
 							wrapping="true"
 						/>
-					</FlexBox>
-				</uxap:snappedHeading>
-				<uxap:expandedContent>
-					<Text text="Senior UI Entwickler - Fulda, DE"/>
-				</uxap:expandedContent>
-				<uxap:snappedContent>
-					<Text text="Senior UI Entwickler - Fulda, DE"/>
-				</uxap:snappedContent>
-				<uxap:snappedTitleOnMobile>
-					<Title text="Senior UI Entwickler - Fulda, DE"/>
-				</uxap:snappedTitleOnMobile>
-			</uxap:ObjectPageDynamicHeaderTitle>
-		</uxap:headerTitle>
-		<uxap:landmarkInfo/>
-		<uxap:sections/>
-	</uxap:ObjectPageLayout>
+					</m:FlexBox>
+				</snappedHeading>
+				<expandedContent>
+					<m:Text text="Senior UI Entwickler - Fulda, DE"/>
+				</expandedContent>
+				<snappedContent>
+					<m:Text text="Senior UI Entwickler - Fulda, DE"/>
+				</snappedContent>
+				<snappedTitleOnMobile>
+					<m:Title text="Senior UI Entwickler - Fulda, DE"/>
+				</snappedTitleOnMobile>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+		<landmarkInfo/>
+		<sections>
+			<ObjectPageSection
+				titleUppercase="false"
+				id="goalsSection"
+				title="Ziele 2022"
+			>
+				<subSections>
+					<ObjectPageSubSection
+						id="goalsSectionSS1"
+						title="Berufliche Ziele"
+					>
+						<actions>
+							<m:MessageStrip
+								text="Ziele werden regelmäßig angepasst!"
+								type="Error"
+							/>
+						</actions>
+						<blocks>
+							<ziele:ZieleBlock/>
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
+						id="goalsSectionSS2"
+						title="Persönliche Ziele"
+					>
+						<blocks>
+							<ziele:ZieleBlock_gym_private/>
+							<ziele:ZieleBlock_zukunft_private/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection
+				titleUppercase="false"
+				id="erfahrungen"
+				title="Bisherige Erfahrungen"
+			>
+				<subSections>
+					<ObjectPageSubSection
+						id="expSectionSS1"
+						title="Fiori"
+					>
+						<blocks>
+							<m:Label text="Ich bin erstmal nur ein Placeholder"/>
+						</blocks>
+						<moreBlocks>
+							<m:Label text="2. Placeholder"/>
+						</moreBlocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection
+						id="expSectionSS2"
+						title="SAP"
+					>
+						<blocks>
+							<m:Label text="Ich bin erstmal nur ein Placeholder"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
 </mvc:View>

@@ -1,13 +1,9 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"../model/formatter"
-], function(Controller, formatter) {
+	"sap/ui/core/mvc/Controller"
+], function(Controller) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.basicTemplate.controller.Home", {
-
-		formatter: formatter,
-
+	return Controller.extend("lr.de.website.controller.Home", {
 		onInit: function () {
 
 		}

@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+	<forms:SimpleForm editable="false" layout="ColumnLayout" >
+			<Label text="Ein schickes Haus in toller Lage" />
+			<Text text="Bis spätestens zum 40. Lebensjahr"/>
+
+			<Label text="Frau und Kinder" />
+			<Text text="wünschenswert"/>
+
+			<Label text="Finanziell unabhängig" />
+			<Text text="wünschenswert mit 50."/>
+	</forms:SimpleForm>
+</mvc:View>
