@@ -1,1 +1,0 @@
-sap.ui.define(["sap/ui/core/library","sap/uxap/BlockBase"],function(e,i){"use strict";var a=e.mvc.ViewType;var l=i.extend("lr.de.website.blocks.ZieleBlock_gym_private",{metadata:{views:{Collapsed:{viewName:"lr.de.website.blocks.ZieleBlock_gym_private",type:a.XML},Expanded:{viewName:"lr.de.website.blocks.ZieleBlock_gym_private",type:a.XML}}}});return l});

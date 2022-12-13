@@ -3,15 +3,15 @@ sap.ui.define(["sap/ui/core/library", 'sap/uxap/BlockBase'], function (coreLibra
 
 	var ViewType = coreLibrary.mvc.ViewType;
 
-	var GoalsBlock = BlockBase.extend("lr.de.website.blocks.ZieleBlock", {
+	var GoalsBlock = BlockBase.extend("lr.de.website.blocks.ziele_daheim", {
 		metadata: {
 			views: {
 				Collapsed: {
-					viewName: "lr.de.website.blocks.ZieleBlock",
+					viewName: "lr.de.website.blocks.ziele_daheim",
 					type: ViewType.XML
 				},
 				Expanded: {
-					viewName: "lr.de.website.blocks.ZieleBlock",
+					viewName: "lr.de.website.blocks.ziele_daheim",
 					type: ViewType.XML
 				}
 			}

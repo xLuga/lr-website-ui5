@@ -28,6 +28,14 @@
                         </m:HBox>
                     </m:VBox>
                 </layout:VerticalLayout>
+
+                <layout:VerticalLayout>
+                    <layout:content>
+                        <m:Text text="Hallo, mein Name ist Lukas Rausch und ich bin aktuell 25 Jahre alt." />
+                        <m:Text text="Ich arbeite jetzt seit ca. 8 Jahren im SAP Umfeld und entwickle SAP Anwendungen." />
+                        <m:Text text="Seit neuestem bin ich auch im UI5 Umfeld tätig, weil mir dieses Themengebiet riesig Spaß bereitet." />
+                    </layout:content>
+                </layout:VerticalLayout>
             </m:FlexBox>
         </headerContent>
         <headerTitle>
@@ -67,14 +75,9 @@
                             <m:MessageStrip text="Ziele werden regelmäßig angepasst!" type="Error" />
                         </actions>
                         <blocks>
-                            <ziele:ZieleBlock columnLayout="1" />
-                        </blocks>
-                    </ObjectPageSubSection>
-
-                    <ObjectPageSubSection id="goalsSectionSS2" title="Persönliche Ziele">
-                        <blocks>
-                            <ziele:ZieleBlock_gym_private id="Gym" columnLayout="1" />
-                            <ziele:ZieleBlock_zukunft_private id="Zukunft" columnLayout="1" />
+                            <ziele:ziele_fiori columnLayout="1" />
+                            <ziele:ziele_sap columnLayout="1" />
+                            <ziele:ziele_daheim columnLayout="1" />
                         </blocks>
                     </ObjectPageSubSection>
                 </subSections>
@@ -100,7 +103,9 @@
                     <ObjectPageSubSection id="firmenSectionSS1" title="Sonstiges">
                         <blocks>
                             <m:FlexBox>
-                                <w:Card manifest="./cards/manifest.json" />
+                                <w:Card manifest="./cards/manifest_firmen.json" class="sapUiSmallMarginBeginEnd" />
+
+                                <w:Card manifest="./cards/manifest_hobbies.json" class="sapUiSmallMarginBeginEnd" />
                             </m:FlexBox>
                         </blocks>
                     </ObjectPageSubSection>
